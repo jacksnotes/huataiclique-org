@@ -63,84 +63,84 @@ function App() {
   const isZh = languageTag() === 'zh'
   const pageCopy = isZh
     ? {
-      brandSubtitle: '图片修复工具 / Erase',
-      infoButton: '说明',
-      eyebrow: 'Browser-only image cleanup',
-      title: '图片水印消除工具',
-      description:
-        '上传图片后，用画笔标记需要移除的区域，浏览器会在本地完成修复处理。适合去水印、移除小物体和清理杂点。',
-      features: [
-        {
-          title: '本地处理',
-          detail: '图片和标记区域都在浏览器中处理，不需要上传到服务端。',
-        },
-        {
-          title: '直接可用',
-          detail: '打开网页即可使用，适合快速处理单张图片和常见素材图。',
-        },
-        {
-          title: '结果可下载',
-          detail: '修复完成后可直接预览、继续编辑并下载结果图片。',
-        },
-      ],
-      noticeEyebrow: 'Notice',
-      noticeTitle: '工具说明',
-      noticeBody:
-        '本工具基于开源项目改造并继续公开发布，用于浏览器端图片修复与水印消除。',
-      publicRepo: '查看源码仓库',
-      sourceRepo: '查看项目出处',
-      copyrightTitle: '版权与出处',
-      copyrightBody:
-        'Modified from inpaint-web (GPL-3.0). 使用时请同时保留原项目署名、许可证和源码公开地址。',
-      aboutTitle: '关于本工具',
-      aboutBody:
-        '这是一个面向公开访问的在线图片修复工具，支持在浏览器中标记并移除图片中的水印、文字或不需要的物体。',
-      aboutRepoLabel: '源码仓库',
-      aboutSourceLabel: '项目出处',
-      aboutFooter:
-        '本项目公开仓库和上游出处都已在此页展示，便于用户查看源码、许可证和版权说明。',
-    }
+        brandSubtitle: '图片修复工具 / Erase',
+        infoButton: '说明',
+        eyebrow: 'Browser-only image cleanup',
+        title: '图片水印消除工具',
+        description:
+          '上传图片后，用画笔标记需要移除的区域，浏览器会在本地完成修复处理。适合去水印、移除小物体和清理杂点。',
+        features: [
+          {
+            title: '本地处理',
+            detail: '图片和标记区域都在浏览器中处理，不需要上传到服务端。',
+          },
+          {
+            title: '直接可用',
+            detail: '打开网页即可使用，适合快速处理单张图片和常见素材图。',
+          },
+          {
+            title: '结果可下载',
+            detail: '修复完成后可直接预览、继续编辑并下载结果图片。',
+          },
+        ],
+        noticeEyebrow: 'Notice',
+        noticeTitle: '工具说明',
+        noticeBody:
+          '本工具基于开源项目改造并继续公开发布，用于浏览器端图片修复与水印消除。',
+        publicRepo: '查看源码仓库',
+        sourceRepo: '查看项目出处',
+        copyrightTitle: '版权与出处',
+        copyrightBody:
+          'Modified from inpaint-web (GPL-3.0). 使用时请同时保留原项目署名、许可证和源码公开地址。',
+        aboutTitle: '关于本工具',
+        aboutBody:
+          '这是一个面向公开访问的在线图片修复工具，支持在浏览器中标记并移除图片中的水印、文字或不需要的物体。',
+        aboutRepoLabel: '源码仓库',
+        aboutSourceLabel: '项目出处',
+        aboutFooter:
+          '本项目公开仓库和上游出处都已在此页展示，便于用户查看源码、许可证和版权说明。',
+      }
     : {
-      brandSubtitle: 'Image Cleanup Tool / Erase',
-      infoButton: 'About',
-      eyebrow: 'Browser-only image cleanup',
-      title: 'Remove Image Watermarks',
-      description:
-        'Upload an image, paint over the area you want to remove, and let the browser repair it locally. Useful for watermark removal, small object cleanup, and spot fixing.',
-      features: [
-        {
-          title: 'Local Processing',
-          detail:
-            'Images and mask regions are processed in the browser without sending them to a server.',
-        },
-        {
-          title: 'Ready to Use',
-          detail:
-            'Open the page and start editing right away for common image cleanup tasks.',
-        },
-        {
-          title: 'Download Results',
-          detail:
-            'Preview the repaired result, continue editing, and download the final image.',
-        },
-      ],
-      noticeEyebrow: 'Notice',
-      noticeTitle: 'Tool Info',
-      noticeBody:
-        'This tool is adapted from an open-source project and republished for browser-based image cleanup.',
-      publicRepo: 'View Source Repo',
-      sourceRepo: 'View Upstream Project',
-      copyrightTitle: 'Copyright & Source',
-      copyrightBody:
-        'Modified from inpaint-web (GPL-3.0). Please keep the original attribution, license, and source code reference when redistributing it.',
-      aboutTitle: 'About This Tool',
-      aboutBody:
-        'This is a public-facing online image cleanup tool for removing watermarks, text, and unwanted objects directly in the browser.',
-      aboutRepoLabel: 'Source Repository',
-      aboutSourceLabel: 'Upstream Project',
-      aboutFooter:
-        'Both the public repository and the upstream source are listed here so users can review the code, license, and attribution.',
-    }
+        brandSubtitle: 'Image Cleanup Tool / Erase',
+        infoButton: 'About',
+        eyebrow: 'Browser-only image cleanup',
+        title: 'Remove Image Watermarks',
+        description:
+          'Upload an image, paint over the area you want to remove, and let the browser repair it locally. Useful for watermark removal, small object cleanup, and spot fixing.',
+        features: [
+          {
+            title: 'Local Processing',
+            detail:
+              'Images and mask regions are processed in the browser without sending them to a server.',
+          },
+          {
+            title: 'Ready to Use',
+            detail:
+              'Open the page and start editing right away for common image cleanup tasks.',
+          },
+          {
+            title: 'Download Results',
+            detail:
+              'Preview the repaired result, continue editing, and download the final image.',
+          },
+        ],
+        noticeEyebrow: 'Notice',
+        noticeTitle: 'Tool Info',
+        noticeBody:
+          'This tool is adapted from an open-source project and republished for browser-based image cleanup.',
+        publicRepo: 'View Source Repo',
+        sourceRepo: 'View Upstream Project',
+        copyrightTitle: 'Copyright & Source',
+        copyrightBody:
+          'Modified from inpaint-web (GPL-3.0). Please keep the original attribution, license, and source code reference when redistributing it.',
+        aboutTitle: 'About This Tool',
+        aboutBody:
+          'This is a public-facing online image cleanup tool for removing watermarks, text, and unwanted objects directly in the browser.',
+        aboutRepoLabel: 'Source Repository',
+        aboutSourceLabel: 'Upstream Project',
+        aboutFooter:
+          'Both the public repository and the upstream source are listed here so users can review the code, license, and attribution.',
+      }
 
   const uploadArea = (
     <>
