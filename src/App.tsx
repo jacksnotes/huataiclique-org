@@ -99,6 +99,7 @@ function App() {
         aboutSourceLabel: '项目出处',
         aboutFooter:
           '本项目公开仓库和上游出处都已在此页展示，便于用户查看源码、许可证和版权说明。',
+        promoButton: '今日优惠',
       }
     : {
         brandSubtitle: 'Image Cleanup Tool / Erase',
@@ -140,6 +141,7 @@ function App() {
         aboutSourceLabel: 'Upstream Project',
         aboutFooter:
           'Both the public repository and the upstream source are listed here so users can review the code, license, and attribution.',
+        promoButton: 'Special Offer',
       }
 
   const uploadArea = (
@@ -332,7 +334,7 @@ function App() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center rounded-xl bg-gradient-to-r from-amber-500 to-orange-500 px-3.5 py-1.5 text-xs font-bold text-slate-950 shadow-md hover:from-amber-400 hover:to-orange-400 transition"
               >
-                今日优惠
+                {pageCopy.promoButton}
               </a>
               <div className="hidden md:flex">{headerControls}</div>
             </div>
