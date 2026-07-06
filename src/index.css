@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    background: #020617;
+    color: #e2e8f0;
+    font-family: Inter, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB',
+      'Microsoft YaHei', system-ui, sans-serif;
+  }
+
+  body {
+    min-height: 100vh;
+    margin: 0;
+    background: radial-gradient(
+        circle at top,
+        rgba(45, 212, 191, 0.08),
+        transparent 28%
+      ),
+      #020617;
+    color: inherit;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  button,
+  input,
+  textarea,
+  select {
+    font: inherit;
+  }
+}
